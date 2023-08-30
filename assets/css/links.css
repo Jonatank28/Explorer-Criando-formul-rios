@@ -1,0 +1,20 @@
+.links{
+    display: flex;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+}
+.links a{
+    background-color: #747c9a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: rgb(196, 201, 206);
+}
+@media (max-width: 500px){
+    .links{
+        gap: 10px;
+    }
+    .links a{
+        padding: 0.2rem 0.2rem;
+    }
+}

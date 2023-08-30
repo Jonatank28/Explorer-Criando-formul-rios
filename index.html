@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <title>Mentoria</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para <br /> agendar a sua mentoria</p>
+        </header>
+        <main>
+            <form id="form">
+                <h2>Informações pessoais</h2>
+                <div class="nomeSobrenome">
+                    <div class="nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="sobrenome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome">
+                    </div>
+                </div>
+                <div class="email inputInline">
+                    <label for="email">Email</label> <span>(digite um email válido)</span>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="senha inputInline">
+                    <label for="senha">Senha</label> <span>(mínimo de 6 caracteres)</span>
+                    <input type="password" id="senha" minlength="6" required>
+                </div>
+                <h2>Informações do mentor</h2>
+                <div class="mentor inputInline">
+                    <label for="mentor">Mentor</label> <span>(só o primeiro nome)</span>
+                    <input type="text" id="mentor">
+                </div>
+                <h2>Seus horários disponíveis</h2>
+                <h3>Primeira mentoria</h3>
+                <div class="dataMentoria">
+                    <div class="data">
+                        <label for="data">Data</label> <span>(DD/MM/AAAA)</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="dasAte">
+                        <div class="dataDas">
+                            <label for="dataDas">Das</label>
+                            <input type="text">
+                        </div>
+                        <div class="dataAte">
+                            <label for="dataAte">Até</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <h3>Segunda mentoria</h3>
+                <div class="dataMentoria">
+                    <div class="data">
+                        <label for="data">Data</label> <span>(DD/MM/AAAA)</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="dasAte">
+                        <div class="dataDas">
+                            <label for="dataDas">Das</label>
+                            <input type="text">
+                        </div>
+                        <div class="dataAte">
+                            <label for="dataAte">Até</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <input type="submit" form="form" value="Salvar">
+            </div>
+        </footer>
+        <div class="links">
+            <a href="index.html">Criando Formulários</a>
+            <a href="formularioAvancado.html">Formulários avançados</a>
+        </div>
+    </div>
+</body>
+</html

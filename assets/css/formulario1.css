@@ -1,0 +1,112 @@
+body{
+    background-color: var(--background);
+}
+body::before{
+    content: "";
+    background-color: var(--text-color);
+    height: 436px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+header h1{
+    color: var(--white);
+    font-size: 3rem;
+
+    margin-top: 50px;
+} 
+header p{
+    color: var(--white);
+    font-size: 1.25rem;
+    line-height: 30px;
+
+    margin-top: 18px;
+}
+form{
+    background-color: var(--white);
+    padding: 64px;
+    margin-top: 58px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  
+}    
+form h2{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--linha);
+}
+form h3{
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+.nomeSobrenome{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.inputInline label{
+    margin-right: 8px;
+}
+.dataMentoria{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.data{
+    width: 65%;
+}
+.dasAte{
+    display: flex;
+    gap: 10px;
+    width: 45%;
+}
+footer{
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 50px;
+}
+footer input{
+    color: var(--white);
+    font-size: 1.25rem;
+    background-color: var( --decoration);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 279px;
+    outline: none;
+    cursor: pointer;
+}
+input:invalid{
+    border: 2px solid red;
+}
+/* Mobile */
+
+@media (max-width: 500px) {
+    form{
+        padding: 30px;
+    }  
+    .nomeSobrenome{
+        flex-direction: column;
+    }
+    .dataMentoria{
+        flex-direction: column;
+    }
+    .data{
+        width: 100%;
+    }
+    .dasAte{
+        width: 100%;
+    }
+    footer input{
+        padding: 10px 30vw;
+    }
+}

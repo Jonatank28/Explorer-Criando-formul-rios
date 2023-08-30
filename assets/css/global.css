@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap');
+@import url(formulario1.css);
+@import url(links.css);
+
+:root{
+    --text-color:#535971;
+    --label:#4E4958;
+    --text-span:#C1BCCC;
+    --background:#E5E5E5;
+    --white:#FFFFFF;
+    --linha:#E6E6F0;
+    --decoration:#FF5374;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: min(750px, 95vw);
+    margin: 0 auto;
+}
+h1,h2,h3{
+    font-family: 'Staatliches', cursive;
+}
+h2,h3{
+    margin-top: 23px;
+}
+h2:first-child{
+    margin-top: 0px;
+}
+label{
+    font-size: 0.875rem;
+    color: var(--label);
+}
+input{
+    display: inline-block;
+    width: 100%;
+    line-height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--linha);
+    margin-top: 8px;
+    padding: 0 1rem;
+}
+span{
+    font-size: 0.75rem;
+    color: var(--text-span);
+}
